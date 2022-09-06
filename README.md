@@ -9,7 +9,7 @@ The app uses a Machine Learning classifier trained with a large dataset of messa
 
 
 ***Screenshot 1: App Front Page***
-![Screenshot 1](https://github.com/gkhayes/disaster_response_app/blob/master/cap_1.JPG)
+![Screenshot 1](https://github.com/carboML/Disaster_Response_Pipeline/blob/main/cap_1.JPG)
 
 
 
