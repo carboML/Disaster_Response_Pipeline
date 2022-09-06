@@ -61,5 +61,4 @@ To execute the app follow the instructions:
 3. Go to http://0.0.0.0:3001/
 
 ## Author, and licensing
-The app 
-  
+The app code and app andjupyter notebook templates, is given by Udacity as part as their Nanodegree in data science. The data set is provided by Figure 8
