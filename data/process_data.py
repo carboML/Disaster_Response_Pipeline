@@ -1,6 +1,7 @@
 import sys
 import pandas as pd
 from sqlalchemy import create_engine
+import numpy as np
 
 
 def load_data(messages_filepath, categories_filepath):
@@ -46,10 +47,10 @@ def clean_data(df):
     
         categories[column] = categories[column].astype(str).str[-1] # str[-1] takes the first character starting from the rigth
         # convert column from string to numeric
-        categories[column] = categories[column].astype(int)
+        categories[column] = categories[column].astype(np.int)
     
     # Join the clean categories column with df
-    
+    df['related'].replace(1,2,inplace=True)
     df.drop(columns = ['categories'],  inplace=True)
 
     df = pd.concat([df, categories],axis=1)
@@ -72,7 +73,7 @@ def save_data(df, database_filename):
     
 
     engine = create_engine('sqlite:///'+database_filename)
-    df.to_sql('table_messages', engine, index=False)  
+    df.to_sql('table_messages', engine, index=False,if_exists='replace')  
 
 
 
