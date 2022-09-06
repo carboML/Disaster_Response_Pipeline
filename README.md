@@ -8,7 +8,7 @@ This repository contains the information and code needed to create an app that c
 The app uses a Machine Learning classifier trained with a large dataset of messages an categories, provided by [Figure Eight](https://www.figure-eight.com/).
 
 
-***Screenshot 1: App Front Page***
+Front page of the app:
 ![Screenshot 1](https://github.com/carboML/Disaster_Response_Pipeline/blob/main/cap_1.JPG)
 
 
@@ -60,6 +60,6 @@ To execute the app follow the instructions:
 
 3. Go to http://0.0.0.0:3001/
 
-## Licensing, Authors, Acknowledgements
-This app was completed as part of the [Udacity Data Scientist Nanodegree](https://www.udacity.com/course/data-scientist-nanodegree--nd025). Code templates and data were provided by Udacity. The data was originally sourced by Udacity from Figure Eight.
+## Author, and licensing
+The app 
   
