@@ -117,19 +117,19 @@ def build_model():
 
     # Since the grid search takes forever to run in my personal computer, I'd rather create a model with 5 estimators that is not the optimal solution
     # If I had to run the cv grid everytime this project will take forever to be completed
-    ''''
+   
     parameters = pipe.get_params()
 
     # After taking a look at this 
     parameters = {
             'tfidf__use_idf': (True, False), #rather to use or not tdif 
-            'clf__estimator__n_estimators': [5, 10] # Number of estimator ( trees) from 10 to 20, Now: 20
+            'clf__estimator__n_estimators': [5, 6] # Number of estimator ( trees) from 5 to 6, Future users can increse this        range
     }
 
     cv = GridSearchCV(pipe, param_grid = parameters)
-    '''
+    
 
-    return pipe
+    return cv
 
 
 
